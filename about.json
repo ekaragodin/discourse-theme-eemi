@@ -1,3 +1,17 @@
 {
-  "name": "EEMI"
+  "name": "EEMI",
+  "color_schemes": {
+    "EEMI Light": {
+      "primary": "484961",
+      "secondary": "FFFFFF",
+      "tertiary": "5F65DC",
+      "quaternary": "88889B",
+      "header_background": "FFFFFF",
+      "header_primary": "484961",
+      "highlight": "ECF0FF",
+      "danger": "BB1122",
+      "success": "3D854D",
+      "love": "9D256B"
+    }
+  }
 }

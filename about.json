@@ -1,5 +1,8 @@
 {
   "name": "EEMI",
+  "modifiers": {
+    "serialize_topic_excerpts": true
+  },
   "color_schemes": {
     "EEMI Light": {
       "primary": "484961",

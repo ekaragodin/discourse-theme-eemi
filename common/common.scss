@@ -1,14 +1,71 @@
-.hello-world-banner {
-  height: 300px;
-  width: 100%;
-  background: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1em;
+.topic-list-header {
+  display: none;
 }
 
-.hello-world {
-  font-size: 8em;
-  color: white;
+.topic-list-item.visited .topic-list-data a.title:not(.badge-notification),
+.latest-topic-list-item.visited a.title:not(.badge-notification),
+.category-topic-link.visited a.title:not(.badge-notification) {
+  color: var(--primary);
+}
+
+body:not(.categories-list) .topic-list {
+  .topic-list-body {
+    border: none;
+  }
+
+  .topic-list-item {
+    border: none;
+  }
+
+  .main-link {
+    padding: 20px;
+
+    .author {
+      .avatar {
+        width: 24px;
+        height: 24px;
+      }
+      .username {
+        font-size: 13px;
+      }
+    }
+
+    .topic-title {
+      a {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    .topic-excerpt {
+      padding: 0;
+
+      a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0;
+        color: var(--primary-very-high);
+      }
+    }
+
+    .link-bottom-line {
+      padding-top: 16px;
+      display: flex;
+
+      .category {
+        flex-grow: 1;
+      }
+
+      .likes {
+        width: auto;
+        margin-left: 20px;
+      }
+
+      .posts-map {
+        margin-left: 20px;
+      }
+    }
+  }
 }

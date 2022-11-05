@@ -1,5 +1,7 @@
 {
   "name": "EEMI",
+  "about_url": "https://github.com/ekaragodin/discourse-theme-eemi",
+  "license_url": "https://github.com/ekaragodin/discourse-theme-eemi/blob/master/LICENSE",
   "modifiers": {
     "serialize_topic_excerpts": true
   },

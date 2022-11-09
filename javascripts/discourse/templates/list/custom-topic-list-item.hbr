@@ -35,13 +35,13 @@
   </div>
 
   <div class="link-bottom-line">
-    {{#unless hideCategory}}
-      {{#unless topic.isPinnedUncategorized}}
-        <span class="category">
+    <span class="category">
+      {{#unless hideCategory}}
+        {{#unless topic.isPinnedUncategorized}}
           {{category-link topic.category}}
-        </span>
+        {{/unless}}
       {{/unless}}
-    {{/unless}}
+    </span>
 
     {{format-date topic.createdAt format="tiny"}}
 

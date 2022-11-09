@@ -18,7 +18,8 @@ body:not(.categories-list) .topic-list {
   }
 
   .main-link {
-    padding: 20px;
+    padding: 20px 0;
+    max-width: none;
 
     .author {
       .avatar {
@@ -40,6 +41,7 @@ body:not(.categories-list) .topic-list {
 
     .topic-excerpt {
       padding: 0;
+      width: auto;
 
       a {
         font-weight: 400;

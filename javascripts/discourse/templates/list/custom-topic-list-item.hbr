@@ -1,4 +1,4 @@
-<div class='main-link topic-list-data clearfix' colspan="1">
+<td class='main-link topic-list-data clearfix'>
   <div class="author">
     {{~raw-plugin-outlet name="topic-list-before-status"}}
     <a href="{{topic.posters.[0].user.userPath}}" data-user-card="{{topic.posters.[0].user.username}}">
@@ -7,7 +7,7 @@
     </a>
   </div>
 
-  <div class="link-middle-line" id='{{#if topic.hasExcerpt}}link-middle-line-excerpt{{/if}}' >
+  <div class="link-middle-line">
       <div class="topic-title">
         {{~raw "topic-status" topic=topic}}
         {{~topic-link topic class="raw-link raw-topic-link"}}
@@ -53,4 +53,4 @@
 
     {{raw "list/posts-count-column" topic=topic}}
   </div>
-</div>
+</td>

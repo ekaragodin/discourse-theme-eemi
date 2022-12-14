@@ -1,25 +1,25 @@
 <td class='main-link topic-list-data clearfix'>
-  <div class="author">
-    {{~raw-plugin-outlet name="topic-list-before-status"}}
-    <a href="{{topic.posters.[0].user.path}}" data-user-card="{{topic.posters.[0].user.username}}">
-      {{avatar topic.posters.[0].user imageSize='small'}}
-      <span class="username">{{topic.posters.[0].user.username}}</span>
-    </a>
-  </div>
-
-  <div class="topic-title">
-    {{~topic-link topic class="raw-link raw-topic-link"}}
-    {{~#if topic.featured_link}}
-      {{~topic-featured-link topic}}
-    {{~/if}}
-    {{~#if showTopicPostBadges}}
-      {{~raw "topic-post-badges" unreadPosts=topic.unread_posts unseen=topic.unseen url=topic.lastUnreadUrl newDotText=newDotText}}
-    {{~/if}}
-  </div>
-  {{~raw-plugin-outlet name="topic-list-after-title"}}
-
   <div class="link-middle-line">
     <div class="topic-excerpt-wrapper">
+      <div class="author">
+        {{~raw-plugin-outlet name="topic-list-before-status"}}
+        <a href="{{topic.posters.[0].user.path}}" data-user-card="{{topic.posters.[0].user.username}}">
+          {{avatar topic.posters.[0].user imageSize='small'}}
+          <span class="username">{{topic.posters.[0].user.username}}</span>
+        </a>
+      </div>
+
+      <div class="topic-title">
+        {{~topic-link topic class="raw-link raw-topic-link"}}
+        {{~#if topic.featured_link}}
+          {{~topic-featured-link topic}}
+        {{~/if}}
+        {{~#if showTopicPostBadges}}
+          {{~raw "topic-post-badges" unreadPosts=topic.unread_posts unseen=topic.unseen url=topic.lastUnreadUrl newDotText=newDotText}}
+        {{~/if}}
+      </div>
+      {{~raw-plugin-outlet name="topic-list-after-title"}}
+
       <div class="topic-excerpt">
         {{raw "list/topic-excerpt" topic=topic}}
       </div>

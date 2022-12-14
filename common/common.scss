@@ -10,6 +10,10 @@ html {
   padding: 0 1.7rem;
 }
 
+img.avatar {
+  border-radius: 8px;
+}
+
 // Header
 
 .d-header {
@@ -53,34 +57,66 @@ body:not(.categories-list) .topic-list {
     padding: 20px 0;
     max-width: none;
 
-    .author {
+    .author a {
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.1px;
+
       .avatar {
+        display: block;
         width: 24px;
         height: 24px;
+        margin-right: 0.5rem;
       }
+
       .username {
+        display: block;
         font-size: 13px;
+        color: #1A1B3A; /* Text/colorTextPrimary */
       }
     }
 
     .topic-title {
+      display: flex;
+      align-items: center;
+
       a {
         font-weight: 600;
         font-size: 20px;
         line-height: 24px;
+        padding-top: 12px;
+        padding-bottom: 8px;
       }
     }
 
-    .topic-excerpt {
-      padding: 0;
-      width: auto;
+    .link-middle-line {
+      display: flex;
 
-      a {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-        padding: 0;
-        color: var(--primary-very-high);
+      .topic-excerpt-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .topic-excerpt {
+          padding: 0;
+          width: auto;
+          flex-grow: 1;
+          margin-top: 0;
+
+          a {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 0;
+            color: var(--primary-very-high);
+          }
+        }
+      }
+
+      .topic-image img {
+        width: 220px;
+        height: 176px;
+        border-radius: 8px;
+        margin-left: 26px;
       }
     }
 
@@ -90,15 +126,48 @@ body:not(.categories-list) .topic-list {
 
       .category {
         flex-grow: 1;
+
+        .badge-wrapper {
+          background-color: var(--tertiary-400);
+          padding: 4px 16px;
+          border-radius: 20px;
+          font-size: var(--font-down-3);
+
+          .badge-category-bg {
+            display: none;
+          }
+
+          .badge-category {
+            color: var(--primary-high);
+          }
+        }
       }
 
-      .likes {
-        width: auto;
-        margin-left: 20px;
+      .date {
+        line-height: var(--line-height-small);
+        font-size: var(--font-down-1);
       }
 
       .posts-map {
         margin-left: 20px;
+        font-size: var(--font-down-1);
+        color: var(--primary-medium);
+      }
+
+      .topic-statuses {
+        line-height: var(--line-height-small);
+        font-size: var(--font-down-1);
+        display: flex;
+
+        .topic-status {
+          display: block;
+          margin-left: 20px;
+
+          .d-icon {
+            height: 1em;
+            width: 1em;
+          }
+        }
       }
     }
   }

@@ -5,6 +5,11 @@ html {
   font-size: 16px;
 }
 
+body.has-sidebar-page #main-outlet-wrapper {
+  padding: 0 1.5rem;
+}
+
+body.has-sidebar-page .wrap,
 .wrap {
   max-width: none;
   padding: 0 1.5rem;
@@ -30,6 +35,16 @@ img.avatar {
   #site-logo {
     height: 32px;
   }
+}
+
+// Sidebar
+
+.sidebar-wrapper {
+  background-color: transparent;
+}
+
+.sidebar-footer-wrapper .sidebar-footer-container {
+  background-color: transparent;
 }
 
 // Topic list
